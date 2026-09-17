@@ -3,17 +3,31 @@ import Footer from "../../components/Footer"
 import Hero from "../../components/Hero"
 import Navbar from "../../components/Navbar"
 import carasip from "../../assets/motion/carasip.gif"
+import Brand from "../../components/Brand/Brand"
+import Grow from "../../components/Grow"
+import yellowMotion from '../../assets/motion/yellowMotion.gif';
+import Location from "../../components/Location"
+
 
 const Home =()=>{
     return<>
-    <div className="h-1000">
         <Navbar />
         <Hero />
         <CompanyPreview />
         <div className="aspect-1921/421 w-full overflow-hidden">
             <img src={carasip} alt="" className="block w-full"/>
         </div>
+        <Brand />
+        
+         <div className="w-full mt-46 overflow-hidden">
+            <img
+                src={yellowMotion}
+                alt="Grow banner"
+                className="block w-full aspect-1920/65 object-cover object-center"
+            />
         </div>
+        <Grow />
+        <Location />
          <Footer />
     </>
 }
