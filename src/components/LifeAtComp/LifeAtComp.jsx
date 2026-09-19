@@ -120,13 +120,13 @@ const LifeAtComp = () => {
                                 <div className="flex gap-1 text-xl text-[#F4C41C]" aria-label="5 out of 5 stars">
                                     {[1, 2, 3, 4, 5].map((star) => <span key={star}>★</span>)}
                                 </div>
-                                <p className="mt-6 max-w-145 font-inter text-lg leading-tight tracking-[-0.04em] text-[#414141] lg:text-2xl">
+                                <p className="mt-6 max-w-145 font-inter text-lg leading-tight tracking-[-0.04em] text-grey lg:text-2xl">
                                     {testimonial.quote}
                                 </p>
                                 <div className="mt-auto flex items-center gap-4 border-t border-[#D9D9D9] pt-5">
                                     <img className="h-14 w-14 rounded-full object-cover" src={videoTestimoni} alt="" />
                                     <div>
-                                        <h3 className="font-inter text-lg font-semibold text-[#414141] lg:text-xl">{testimonial.name}</h3>
+                                        <h3 className="font-inter text-lg font-semibold text-grey lg:text-xl">{testimonial.name}</h3>
                                         <p className="font-inter text-sm text-primary lg:text-base">{testimonial.role}</p>
                                     </div>
                                 </div>

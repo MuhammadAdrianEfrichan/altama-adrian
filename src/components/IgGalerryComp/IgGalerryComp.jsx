@@ -24,7 +24,7 @@ const IgGalerryComp = () => {
                             Dokumentasi kegiatan, budaya kerja, dan perjalanan Altama.
                         </p>
 
-                        <div className="mx-auto mt-8 flex w-fit rounded-full border-4 border-[#ACA9DF] bg-[#E4E4E4] p-0.5">
+                        <div className="mx-auto mt-8 flex w-fit rounded-full border-4 border-[#ACA9DF] bg-abu p-0.5">
                             <Link
                                 className="h-11 rounded-full bg-primary px-7 py-3 font-inter text-sm font-semibold text-white md:text-base"
                                 to="/gallery"
@@ -32,7 +32,7 @@ const IgGalerryComp = () => {
                                 Instagram Gallery
                             </Link>
                             <Link
-                                className="h-11 rounded-full px-7 py-3 font-inter text-sm font-semibold text-[#414141] transition-colors hover:bg-white md:text-base"
+                                className="h-11 rounded-full px-7 py-3 font-inter text-sm font-semibold text-grey transition-colors hover:bg-white md:text-base"
                                 to="/web-gallery"
                             >
                                 Web Gallery
@@ -44,7 +44,7 @@ const IgGalerryComp = () => {
                         {gallerySlots.map((slot) => (
                             <div
                                 key={slot}
-                                className="aspect-[405/629] rounded-3xl border border-white/10 bg-white/10"
+                                className="aspect-405/629 rounded-3xl border border-white/10 bg-white/10"
                                 aria-label={`Gallery placeholder ${slot + 1}`}
                             />
                         ))}
