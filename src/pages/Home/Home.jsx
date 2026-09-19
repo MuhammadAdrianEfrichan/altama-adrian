@@ -13,11 +13,15 @@ const Home =()=>{
     return<>
         <Navbar />
         <Hero />
-        <CompanyPreview />
-        <div className="aspect-1921/421 w-full overflow-hidden">
+        <div id="profile">
+            <CompanyPreview />
+        </div>
+        <div id="media-center" className="aspect-1921/421 w-full overflow-hidden">
             <img src={carasip} alt="" className="block w-full"/>
         </div>
-        <Brand />
+        <div id="brand">
+            <Brand />
+        </div>
         
          <div className="w-full mt-46 overflow-hidden">
             <img
@@ -26,8 +30,12 @@ const Home =()=>{
                 className="block w-full aspect-1920/65 object-cover object-center"
             />
         </div>
-        <Grow />
-        <Location />
+        <div id="career">
+            <Grow />
+        </div>
+        <div id="contact-us">
+            <Location />
+        </div>
          <Footer />
     </>
 }

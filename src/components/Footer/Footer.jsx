@@ -1,4 +1,5 @@
 import copyright from "../../assets/footer/Copyright.png";
+import { Link } from "react-router-dom";
 import fb from "../../assets/footer/fb.svg";
 import gradientDua from "../../assets/footer/gradientDua.svg";
 import gradientSatu from "../../assets/footer/gradientSatu.svg";
@@ -18,10 +19,38 @@ const socialLinks = [
 ];
 
 const footerColumns = [
-    { title: "Company", links: ["About", "Career", "News"] },
-    { title: "Product", links: ["Tekiro", "Rexco", "Ryu"] },
-    { title: "Contact Us", links: ["Location", "Help", "Alva"] },
-    { title: "Company Overview", links: ["Media Center", "Gallery", "Career"] },
+    {
+        title: "Company",
+        links: [
+            { label: "About", path: "/#profile" },
+            { label: "Career", path: "/grow-with" },
+            { label: "News", path: "/detail-news" },
+        ],
+    },
+    {
+        title: "Product",
+        links: [
+            { label: "Tekiro", path: "/#brand" },
+            { label: "Rexco", path: "/#brand" },
+            { label: "Ryu", path: "/#brand" },
+        ],
+    },
+    {
+        title: "Contact Us",
+        links: [
+            { label: "Location", path: "/contact-us" },
+            { label: "Help", path: "/contact-us" },
+            { label: "Alva", path: "/contact-us" },
+        ],
+    },
+    {
+        title: "Company Overview",
+        links: [
+            { label: "Media Center", path: "/gallery" },
+            { label: "Gallery", path: "/gallery" },
+            { label: "Career", path: "/grow-with" },
+        ],
+    },
 ];
 
 const Footer =()=>{
@@ -38,11 +67,13 @@ const Footer =()=>{
                 alt=""
             />
 
-            <div className="relative mx-auto flex max-w-450 flex-col px-8 pb-8 pt-24 lg:px-20">
+            <div className="relative mx-auto flex max-w-450 flex-col px-6 pb-8 pt-16 sm:px-8 md:pt-20 lg:px-20 lg:pt-24">
                 <div className="flex flex-col gap-16 lg:flex-row lg:justify-between lg:gap-24">
                     <div className="flex shrink-0 flex-col gap-20">
-                        <img src={logo} alt="Altama Surya Anugerah" />
-                        <div className="flex gap-3">
+                        <Link to="/" aria-label="Altama Surya Anugerah home">
+                            <img src={logo} alt="Altama Surya Anugerah" />
+                        </Link>
+                        <div className="flex gap-2 sm:gap-3">
                             {socialLinks.map((social) => (
                                 <a
                                     key={social.label}
@@ -67,13 +98,13 @@ const Footer =()=>{
                                 </h2>
                                 <ul className="space-y-5">
                                     {column.links.map((link) => (
-                                        <li key={link}>
-                                            <a
+                                        <li key={link.label}>
+                                            <Link
                                                 className="font-inter text-lg underline decoration-white/40 underline-offset-4 transition-opacity hover:opacity-70"
-                                                href="#"
+                                                to={link.path}
                                             >
-                                                {link}
-                                            </a>
+                                                {link.label}
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>

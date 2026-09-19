@@ -2,7 +2,7 @@ import Button from '../../ui/Button/Button'
 
 const Location = () => {
     return (
-        <section className="w-full bg-[#f3f3f3] px-64.5 py-30 md:px-12">
+        <section className="w-full bg-[#f3f3f3] px-6 py-16 sm:px-8 md:px-12 md:py-24 lg:px-20 xl:px-64.5">
             <div className="mx-auto max-w-300">
                 <h2 className="text-center font-header text-[42px] font-bold leading-none tracking-[-0.04em] md:text-[56px] ">
                     OUR <span className='text-primary'>LOCATION</span> 
@@ -13,7 +13,7 @@ const Location = () => {
                         <iframe
                             title="Altama Location Map"
                             src="https://www.google.com/maps?q=Jl.%20Bandung%20Utara%2085A%20No.%208-9%20RT.3%2FRW.16%20Penjaringan%20Jakarta%20Utara&output=embed"
-                            className="h-105 w-full border-0"
+                            className="h-72 w-full border-0 sm:h-88 md:h-105"
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                         />

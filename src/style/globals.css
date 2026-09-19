@@ -20,3 +20,25 @@
     --default-font-family: var(--font-inter);
 
 }
+
+.milestone-track {
+    scrollbar-width: none;
+}
+
+.milestone-track::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .web-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        grid-template-areas:
+            "a b"
+            "a b"
+            "d d"
+            "f g"
+            "e e"
+            "c c" !important;
+        grid-template-rows: repeat(6, 140px) !important;
+    }
+}

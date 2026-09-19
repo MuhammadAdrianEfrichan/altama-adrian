@@ -17,26 +17,26 @@ const coreValues = [
 
 const VisiDanMisi = () => {
   return (
-    <section className="mx-auto max-w-363 px-14.5 py-18.5">
-      <div className="grid grid-cols-[260px_minmax(0,1fr)] items-start gap-x-18">
-        <div className="space-y-31.75">
+    <section className="mx-auto max-w-363 px-6 py-14 md:px-12 md:py-18.5 lg:px-14.5">
+      <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-x-18">
+        <div className="flex justify-between gap-6 lg:block lg:space-y-31.75">
           <div className="flex items-center gap-4">
             <img src={Polygon} alt="" className="h-4 w-4" />
-            <span className="font-inter text-[30px] font-bold tracking-[-0.04em] text-[#1f1f1f]">
+            <span className="font-inter text-xl font-bold tracking-[-0.04em] text-[#1f1f1f] md:text-[30px]">
               VISI
             </span>
           </div>
 
           <div className="flex items-center gap-4">
             <img src={Polygon} alt="" className="h-4 w-4" />
-            <span className="font-inter text-[30px] font-bold tracking-[-0.04em] text-[#1f1f1f]">
+            <span className="font-inter text-xl font-bold tracking-[-0.04em] text-[#1f1f1f] md:text-[30px]">
               MISSION
             </span>
           </div>
         </div>
 
         <div>
-          <p className="max-w-205 text-[22px] leading-[1.7] tracking-[-0.04em] text-[#1f1f1f] md:text-[28px]">
+          <p className="max-w-205 text-lg leading-[1.55] tracking-[-0.04em] text-[#1f1f1f] md:text-[28px]">
             Menjadi distributor terpercaya di Indonesia untuk peralatan teknik, otomotif, dan industri, dengan produk berkualitas tinggi yang mendukung profesional, pelaku usaha, hingga pengguna rumahan.
           </p>
 
@@ -46,7 +46,7 @@ const VisiDanMisi = () => {
                 <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f0efff] shadow-[inset_0_0_0_1px_rgba(43,40,128,0.2)]">
                   <img src={naik} alt="" className="h-4 w-4" />
                 </div>
-                <p className="max-w-81.25 text-[20px] leading-[1.45] tracking-[-0.03em] text-[#1f1f1f]">
+                <p className="max-w-81.25 text-base leading-[1.45] tracking-[-0.03em] text-[#1f1f1f] md:text-[20px]">
                   {item}
                 </p>
               </div>
@@ -56,7 +56,7 @@ const VisiDanMisi = () => {
       </div>
 
       <div className="mt-18 text-center">
-        <h2 className="font-header text-[62px] font-semibold leading-none tracking-tighter text-[#1f1f1f] md:text-[66px]">
+        <h2 className="font-header text-5xl font-semibold leading-none tracking-tighter text-[#1f1f1f] md:text-[66px]">
           CORE <span className="text-[#2c2a8d]">VALUE</span>
         </h2>
       </div>

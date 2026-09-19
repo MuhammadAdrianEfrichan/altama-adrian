@@ -32,7 +32,7 @@ const Grow = () => {
             </div>
 
             <div className="relative mx-auto max-w-350">
-                <h2 className="text-center font-header text-[44px] font-bold leading-none tracking-[-0.04em] text-white md:text-[68px]">
+                <h2 className="text-center font-header text-[clamp(2rem,4.2vw,4.25rem)] font-bold leading-none tracking-[-0.04em] text-white">
                     GROW WITH US <span className="text-[#F4C41C]">AT ALTAMA!</span>
                 </h2>
 
@@ -40,7 +40,7 @@ const Grow = () => {
                     <input
                         type="text"
                         placeholder="Search job position..."
-                        className="h-15.5 w-full border-0 bg-transparent px-6 text-[24px] text-[#5B5B5B] placeholder:text-[#6d6d6d] focus:outline-none"
+                        className="h-15.5 w-full border-0 bg-transparent px-4 text-base text-[#5B5B5B] placeholder:text-[#6d6d6d] focus:outline-none md:px-6 md:text-[24px]"
                     />
                     <button
                         type="button"
@@ -57,11 +57,11 @@ const Grow = () => {
                             key={index}
                             className="rounded-[28px] bg-[#F3F3F3] p-6 shadow-[0_4px_0_rgba(22,22,22,0.08)]"
                         >
-                            <h3 className="font-header text-[28px] font-bold leading-[1.2] tracking-[-0.03em] text-[#2B2B2B] md:text-[32px]">
+                            <h3 className="font-header text-[clamp(1.4rem,2.2vw,2rem)] font-bold leading-[1.2] tracking-[-0.03em] text-[#2B2B2B]">
                                 {job.title}
                             </h3>
 
-                            <p className="mt-4 text-[18px] leading-[1.55] text-[#474747] md:text-[20px]">
+                            <p className="mt-4 text-base leading-[1.55] text-[#474747] md:text-[20px]">
                                 {job.description}
                             </p>
 
